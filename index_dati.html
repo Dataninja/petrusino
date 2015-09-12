@@ -133,13 +133,14 @@
 			</div>
 		</div>
 		<div class="row clearfix">
-			<div class="col-md-7 column">
+			<div class="col-md-12 column">
 				<div ex:role="facet" 
 				ex:facetClass="Cloud"
-				ex:expression=".categoria" 
-				ex:facetLabel="Categoria"
+				ex:expression=".tag" 
+				ex:facetLabel="Cerca per Tag"
 				ex:sortMode="count"></div>
 			</div>
+			<!--
 			<div class="col-md-2 column">
 				<div ex:role="facet" 
 				ex:expression=".territorio" 
@@ -153,6 +154,7 @@
 				data-ex-missing-label="Non specificato">
 				</div>
 			</div>
+			-->
 		</div>
 		<div class="row clearfix">
 			<div class="col-md-12 column">
@@ -163,8 +165,8 @@
 					<div ex:role="exhibit-view" 
 					ex:viewClass="Exhibit.TabularView"  
 					ex:label="Table"  
-					ex:columns=".label,.descrizione,.territorio,.data_inserimento"  
-					ex:columnLabels="Nome, Descrizione,Territorio, Data inserimento" 
+					ex:columns=".label,.descrizione,.tag,.data_inserimento"  
+					ex:columnLabels="Nome, Descrizione,Tag, Data inserimento" 
 					ex:columnFormats="list,list,list,list"
 					ex:sortColumn="3"
 					ex:sortAscending="false"
@@ -175,7 +177,7 @@
 								<tr>
 									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><span ex:content=".label" class="petrusino"></strong></span></a></td>
 									<td><span ex:content=".descrizione"></td>
-									<td><span ex:content=".territorio"></span></td>
+									<td><span ex:content=".tag"></span></td>
 									<td><span ex:content=".data_inserimento" ></span></td>
 								</tr>
 							</table>
