@@ -165,8 +165,8 @@
 					<div ex:role="exhibit-view" 
 					ex:viewClass="Exhibit.TabularView"  
 					ex:label="Table"  
-					ex:columns=".label,.descrizione,.tag,.data_inserimento"  
-<!-- 					ex:columnLabels="Nome, Descrizione,Tag, Data inserimento"
+					ex:columns=".label,.descrizione,.tag,.segnalatore"  
+<!-- 					ex:columnLabels="Nome, Descrizione,Tag, Segnalato da"
 					ex:columnFormats="list,list,list,list"
 					ex:sortColumn="3"
 					ex:sortAscending="false"
@@ -178,7 +178,7 @@
 									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><span ex:content=".label" class="petrusino"></strong></span></a></td>
 									<td><span ex:content=".descrizione"></td>
 									<td><span ex:content=".tag"></span></td>
-									<td><span ex:content=".data_inserimento" ></span></td>
+									<td><span ex:content=".segnalatore" ></span></td>
 								</tr>
 							</table>
 						</div>
